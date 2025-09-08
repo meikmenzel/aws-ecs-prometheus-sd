@@ -1,6 +1,6 @@
 services:
   aws-ecs-prometheus-sd:
-    build: .
+    image: meikmenzel/aws-ecs-prometheus-sd:0.0.1
     container_name: aws-ecs-prometheus-sd
     ports:
       - "7777:80"
