@@ -1,0 +1,13 @@
+services:
+  aws-ecs-prometheus-sd:
+    build: .
+    container_name: aws-ecs-prometheus-sd
+    ports:
+      - "7777:80"
+    environment:
+      - CLUSTER_NAME= # required e.g. my-cluster
+      - AWS_REGION=
+      - AWS_ACCESS_KEY_ID=
+      - AWS_SECRET_ACCESS_KEY=
+      - CHECK_INTERVAL=30 # optional, default is 30 seconds
+    restart: unless-stopped

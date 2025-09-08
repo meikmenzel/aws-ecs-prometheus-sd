@@ -1,0 +1,45 @@
+{
+  "name": "aws-ecs-prometheus-sd",
+  "version": "0.0.1",
+  "description": "AWS ECS Prometheus Service Discovery",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "start:dev": "npx nodemon --watch",
+    "build": "rimraf dist && tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meikmenzel/aws-ecs-prometheus-sd.git"
+  },
+  "keywords": [
+    "AWS",
+    "ECS",
+    "SD",
+    "Prometheus",
+    "Service",
+    "Discovery",
+    "Metrics",
+    "Monitoring"
+  ],
+  "author": "Meik Menzel <meikmenzel@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meikmenzel/aws-ecs-prometheus-sd/issues"
+  },
+  "homepage": "https://github.com/meikmenzel/aws-ecs-prometheus-sd#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.1",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ecs": "^3.883.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0"
+  }
+}

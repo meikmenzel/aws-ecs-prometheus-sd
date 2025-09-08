@@ -1,0 +1,10 @@
+dist
+node_modules
+.dockerignore
+.env
+.gitignore
+.nvmrc
+.prettierrc
+docker-compose.yml
+Dockerfile
+nodemon.json
